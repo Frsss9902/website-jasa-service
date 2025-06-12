@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="hubungi.js" defer></script>
+    <script src="modal.js" defer></script>
+    <title>Galeri</title>
+    <style>
+      @keyframes gradient-move {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      .animate-gradient {
+        background-size: 300% 300%;
+        animation: gradient-move 8s ease infinite;
+      }
+    </style>
+</head>
+<body class="bg-white-600 font-sans ">
+    <header class="bg-gray-100  p-6 flex items-center justify-between shadow-lg">
+        <img src="Asset\logo adel 1.png" class="w-32 h-auto rounded-md " /> 
+        <div class="flex gap-4 font-bold">
+            <a href="Home.html">Home</a>
+            <a href="Maps.html">Lokasi</a>
+            <a href="Layanan.html">Layanan</a>
+            <a href="Galeri.html">Galeri</a>
+            <button onclick="WA()" class="border border-blue-400 bg-gradient-to-r from-blue-500 via-purple-400 to-blue-500 font-bold rounded-full px-4" type="submit">Hubungi kami</button>
+        </div>
+    </header>
+    <div class="text-center pt-4 pb-8">
+        <p class="text-2xl font-bold tracking-wide text-6xl text-blue-900">Galeri Perusahaan</p>
+    </div>
+    <main class="overflow-hidden relative w-full">
+        <section id="carousel" class="flex transition-transform duration-500 ease-in-out">
+        <div class="P-10 min-w-full">
+            <section class="flex justify-center gap-16 mt-6 ">
+                <img src="Asset\contoh_gambar.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/contoh_gambar.jpg', 'Gambar ini menunjukkan proses perakitan dan perbaikan sistem kendali mobil remote control (RC) yang dilengkapi dengan modul Arduino. Tim teknisi sedang menguji koneksi komponen seperti motor driver, baterai, dan rangkaian kontrol untuk memastikan kendaraan berfungsi dengan optimal. Proyek ini menggambarkan keahlian kami dalam menangani perangkat berbasis mikrokontroler, termasuk troubleshooting dan kalibrasi untuk hobi atau riset teknologi')"/>
+                <img src="Asset/batterai.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/batterai.jpg', 'Pada gambar ini terlihat proses perbaikan baterai dan konektor dari sebuah perangkat smartphone. Teknisi kami membongkar casing dan mengakses bagian dalam untuk mengganti atau memperbaiki koneksi fleksibel, IC charging, dan komponen pendukung lainnya. Pekerjaan ini memerlukan ketelitian tinggi, karena menyangkut perangkat yang kompleks dengan jalur elektronik berukuran mikroskopik.')"/>
+                <img src="Asset/dinamo.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/dinamo.jpg', 'Foto ini mendokumentasikan tahap perbaikan sebuah kipas angin meja yang mengalami kerusakan pada motor penggerak atau panel kontrol. Teknisi kami mengecek kabel, komponen kapasitor, serta saklar untuk memastikan aliran listrik berjalan normal. Kami memberikan perhatian khusus pada aspek keamanan dan kinerja produk agar kipas dapat bekerja dengan efisien dan tahan lama.')"/>
+                <img src="Asset/kipas.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/kipas.jpg', 'Dalam gambar ini, tampak proses servis humidifier rumah tangga, terutama bagian sistem pemanas dan semprotan uap. Kami membongkar komponen utama seperti elemen pemanas, sensor suhu, dan pompa air untuk membersihkan serta mengganti bagian yang rusak. Proses ini penting agar alat dapat berfungsi optimal dalam menjaga kelembapan udara di ruangan pelanggan.')"/>
+            </section>
+            <div class="flex justify-end mt-4">
+                <button onclick="nextSlide()">
+                    <img src="Asset/ICON NEXT.svg" class="w-8 h-8 mr-8"/>
+                </button>
+            </div>
+            <section class="flex justify-center gap-16 mt-10 mb-4">
+                <img src="Asset/kipas2.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/kipas2.jpg', 'Gambar ini menunjukkan teknisi kami yang sedang memperbaiki motor dinamo pada kipas berdiri. Perawatan dilakukan pada bagian stator dan rotor, termasuk penggantian bearing yang aus serta pembersihan kumparan dari debu atau karat. Upaya ini bertujuan memperpanjang usia pakai kipas dan memulihkan kekuatan putaran baling-baling.')"/>
+                <img src="Asset/kuning.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/kuning.jpg', 'Pada gambar ini terlihat bagian dalam sebuah blender yang sedang direkondisi. Teknisi kami membongkar unit untuk mengganti motor penggerak yang lemah serta memperbaiki kabel dan kapasitor start. Perawatan semacam ini penting untuk menjaga performa blender agar tetap kuat dalam mengolah bahan makanan padat dan cair.')"/>
+                <img src="Asset/magicom.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/magicom.jpg', 'Gambar ini menampilkan proses perbaikan rice cooker yang telah usang namun masih memiliki nilai guna. Teknisi melakukan pembersihan kerak dalam, mengganti elemen pemanas, dan memeriksa sistem termostat. Upaya ini menunjukkan komitmen kami untuk memperpanjang umur perangkat elektronik rumah tangga serta mengurangi limbah elektronik.')"/>
+                <img src="Asset/solder.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/solder.jpg', 'Dalam gambar ini, teknisi kami sedang melakukan soldering pada papan sirkuit elektronik. Proses ini sangat penting untuk memperbaiki jalur PCB yang terputus atau mengganti komponen seperti resistor, kapasitor, dan transistor. Keahlian soldering menjadi kunci utama dalam memastikan rangkaian berfungsi sempurna dan bebas dari gangguan sinyal.')"/>
+            </section>
+        </div>
+        <div class="P-10 min-w-full">
+            <section class="flex justify-center gap-16 mt-6 ">
+                 <img src="Asset\contoh_gambar.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/contoh_gambar.jpg', 'Gambar ini menunjukkan proses perakitan dan perbaikan sistem kendali mobil remote control (RC) yang dilengkapi dengan modul Arduino. Tim teknisi sedang menguji koneksi komponen seperti motor driver, baterai, dan rangkaian kontrol untuk memastikan kendaraan berfungsi dengan optimal. Proyek ini menggambarkan keahlian kami dalam menangani perangkat berbasis mikrokontroler, termasuk troubleshooting dan kalibrasi untuk hobi atau riset teknologi')"/>
+                <img src="Asset/batterai.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/batterai.jpg', 'Pada gambar ini terlihat proses perbaikan baterai dan konektor dari sebuah perangkat smartphone. Teknisi kami membongkar casing dan mengakses bagian dalam untuk mengganti atau memperbaiki koneksi fleksibel, IC charging, dan komponen pendukung lainnya. Pekerjaan ini memerlukan ketelitian tinggi, karena menyangkut perangkat yang kompleks dengan jalur elektronik berukuran mikroskopik.')"/>
+                <img src="Asset/dinamo.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/dinamo.jpg', 'Foto ini mendokumentasikan tahap perbaikan sebuah kipas angin meja yang mengalami kerusakan pada motor penggerak atau panel kontrol. Teknisi kami mengecek kabel, komponen kapasitor, serta saklar untuk memastikan aliran listrik berjalan normal. Kami memberikan perhatian khusus pada aspek keamanan dan kinerja produk agar kipas dapat bekerja dengan efisien dan tahan lama.')"/>
+                <img src="Asset/kipas.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/kipas.jpg', 'Dalam gambar ini, tampak proses servis humidifier rumah tangga, terutama bagian sistem pemanas dan semprotan uap. Kami membongkar komponen utama seperti elemen pemanas, sensor suhu, dan pompa air untuk membersihkan serta mengganti bagian yang rusak. Proses ini penting agar alat dapat berfungsi optimal dalam menjaga kelembapan udara di ruangan pelanggan.')"/>
+               
+            </section>
+            <Section class="flex justify-between">
+                <div class="mt-4">
+                <button onclick="prevSlide()">
+                    <img src="Asset/ICON NEXT.svg" class="w-8 h-8 ml-8 scale-x-[-1]"/>
+                </button>
+                </div>
+                <div class="mt-4">
+                    <button onclick="nextSlide()">
+                        <img src="Asset/ICON NEXT.svg" class="w-8 h-8 mr-8"/>
+                    </button>
+                </div>
+                
+                
+                
+            </Section>
+            
+            <section class="flex justify-center gap-16 mt-10 mb-4">
+                 <img src="Asset/kipas2.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/kipas2.jpg', 'Gambar ini menunjukkan teknisi kami yang sedang memperbaiki motor dinamo pada kipas berdiri. Perawatan dilakukan pada bagian stator dan rotor, termasuk penggantian bearing yang aus serta pembersihan kumparan dari debu atau karat. Upaya ini bertujuan memperpanjang usia pakai kipas dan memulihkan kekuatan putaran baling-baling.')"/>
+                <img src="Asset/kuning.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/kuning.jpg', 'Pada gambar ini terlihat bagian dalam sebuah blender yang sedang direkondisi. Teknisi kami membongkar unit untuk mengganti motor penggerak yang lemah serta memperbaiki kabel dan kapasitor start. Perawatan semacam ini penting untuk menjaga performa blender agar tetap kuat dalam mengolah bahan makanan padat dan cair.')"/>
+                <img src="Asset/magicom.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/magicom.jpg', 'Gambar ini menampilkan proses perbaikan rice cooker yang telah usang namun masih memiliki nilai guna. Teknisi melakukan pembersihan kerak dalam, mengganti elemen pemanas, dan memeriksa sistem termostat. Upaya ini menunjukkan komitmen kami untuk memperpanjang umur perangkat elektronik rumah tangga serta mengurangi limbah elektronik.')"/>
+                <img src="Asset/solder.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/solder.jpg', 'Dalam gambar ini, teknisi kami sedang melakukan soldering pada papan sirkuit elektronik. Proses ini sangat penting untuk memperbaiki jalur PCB yang terputus atau mengganti komponen seperti resistor, kapasitor, dan transistor. Keahlian soldering menjadi kunci utama dalam memastikan rangkaian berfungsi sempurna dan bebas dari gangguan sinyal.')"/>
+            </section>
+        </div>
+        <div class="P-10 min-w-full">
+            <section class="flex justify-center gap-16 mt-6 ">
+                <img src="Asset\contoh_gambar.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/contoh_gambar.jpg', 'Gambar ini menunjukkan proses perakitan dan perbaikan sistem kendali mobil remote control (RC) yang dilengkapi dengan modul Arduino. Tim teknisi sedang menguji koneksi komponen seperti motor driver, baterai, dan rangkaian kontrol untuk memastikan kendaraan berfungsi dengan optimal. Proyek ini menggambarkan keahlian kami dalam menangani perangkat berbasis mikrokontroler, termasuk troubleshooting dan kalibrasi untuk hobi atau riset teknologi')"/>
+                <img src="Asset/batterai.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/batterai.jpg', 'Pada gambar ini terlihat proses perbaikan baterai dan konektor dari sebuah perangkat smartphone. Teknisi kami membongkar casing dan mengakses bagian dalam untuk mengganti atau memperbaiki koneksi fleksibel, IC charging, dan komponen pendukung lainnya. Pekerjaan ini memerlukan ketelitian tinggi, karena menyangkut perangkat yang kompleks dengan jalur elektronik berukuran mikroskopik.')"/>
+                <img src="Asset/dinamo.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/dinamo.jpg', 'Foto ini mendokumentasikan tahap perbaikan sebuah kipas angin meja yang mengalami kerusakan pada motor penggerak atau panel kontrol. Teknisi kami mengecek kabel, komponen kapasitor, serta saklar untuk memastikan aliran listrik berjalan normal. Kami memberikan perhatian khusus pada aspek keamanan dan kinerja produk agar kipas dapat bekerja dengan efisien dan tahan lama.')"/>
+                <img src="Asset/kipas.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/kipas.jpg', 'Dalam gambar ini, tampak proses servis humidifier rumah tangga, terutama bagian sistem pemanas dan semprotan uap. Kami membongkar komponen utama seperti elemen pemanas, sensor suhu, dan pompa air untuk membersihkan serta mengganti bagian yang rusak. Proses ini penting agar alat dapat berfungsi optimal dalam menjaga kelembapan udara di ruangan pelanggan.')"/>
+            </section>
+            <section class="flex justify-between">
+                <div class="mt-4">
+                    <button onclick="prevSlide()">
+                        <img src="Asset/ICON NEXT.svg" class="w-8 h-8 ml-8 scale-x-[-1]"/>
+                    </button>
+                </div>
+            </section>
+            <section class="flex justify-center gap-16 mt-10 mb-4">
+                <img src="Asset/kipas2.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/kipas2.jpg', 'Gambar ini menunjukkan teknisi kami yang sedang memperbaiki motor dinamo pada kipas berdiri. Perawatan dilakukan pada bagian stator dan rotor, termasuk penggantian bearing yang aus serta pembersihan kumparan dari debu atau karat. Upaya ini bertujuan memperpanjang usia pakai kipas dan memulihkan kekuatan putaran baling-baling.')"/>
+                <img src="Asset/kuning.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/kuning.jpg', 'Pada gambar ini terlihat bagian dalam sebuah blender yang sedang direkondisi. Teknisi kami membongkar unit untuk mengganti motor penggerak yang lemah serta memperbaiki kabel dan kapasitor start. Perawatan semacam ini penting untuk menjaga performa blender agar tetap kuat dalam mengolah bahan makanan padat dan cair.')"/>
+                <img src="Asset/magicom.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/magicom.jpg', 'Gambar ini menampilkan proses perbaikan rice cooker yang telah usang namun masih memiliki nilai guna. Teknisi melakukan pembersihan kerak dalam, mengganti elemen pemanas, dan memeriksa sistem termostat. Upaya ini menunjukkan komitmen kami untuk memperpanjang umur perangkat elektronik rumah tangga serta mengurangi limbah elektronik.')"/>
+                <img src="Asset/solder.jpg" class=" bg-blue-950 w-48 h-48 object-cover border border-blue-950 border-4"
+                onclick="openModal('Asset/solder.jpg', 'Dalam gambar ini, teknisi kami sedang melakukan soldering pada papan sirkuit elektronik. Proses ini sangat penting untuk memperbaiki jalur PCB yang terputus atau mengganti komponen seperti resistor, kapasitor, dan transistor. Keahlian soldering menjadi kunci utama dalam memastikan rangkaian berfungsi sempurna dan bebas dari gangguan sinyal.')"/>
+            </section>
+        </div>
+        </section>
+        <!-- Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
+    <div class="animate-gradient bg-gradient-to-br from-[#1e3a5f] via-[#0a1a2f] to-blue-700  p-6 rounded-3xl shadow-lg max-w-md w-full text-center relative max-h-[80vh] overflow-y-auto">
+        <button id="closeModal" class="absolute top-2 right-2 text-gray-500 hover:text-black text-xl font-bold">&times;</button>
+        <img id="modalImage" src="" class="w-48 h-48 mx-auto mb-4 object-contain" />
+        
+        <!-- Konten deskripsi yang bisa discroll -->
+        <div class="max-h-48 overflow-y-auto text-gray-800 mt-2 pr-2">
+            <p class="text-justify text-white" id="modalDesc">Deskripsi akan muncul di sini</p>
+        </div>
+    </div>
+    </div>
+
+
+    </main> 
+    <footer class="flex justify-between bg-[#010C38] p-10 text-white">
+        <div class="mt-20">
+            <p>kontak</p>
+            <p class="mb-4">Hubungi Kami Kapan Saja</p>
+            <p>Alamat : Daerah Istimewa Yogyakarta</p>
+            <p>Nomor telepon : 085777777777</p>
+            <p>Surel : tav.velektronika@gmail.com</p>
+        </div>
+        <div class="flex items-center pt-20">
+            <img src="Asset\logo adel 1.png"/>
+            <P class="text-6xl mb-4">|</P>
+            <img src="Asset\Screenshot_2025-05-20_140818-removebg-preview 1.png"/>
+        </div>       
+    </footer>  
+    <script src="Script.js"></script>
+</body>
+</html>
+
+
