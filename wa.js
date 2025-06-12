@@ -20,7 +20,7 @@ Alamat: ${alamat}
 Keluhan: ${keluhan}`;
 
   const encodedPesan = encodeURIComponent(pesan);
-  const noTujuan = "6281295785550";
+  const noTujuan = "6281395237757";
   const url = `https://wa.me/${noTujuan}?text=${encodedPesan}`;
 
   window.open(url, "_blank");
