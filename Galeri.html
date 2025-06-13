@@ -21,14 +21,16 @@
     </style>
 </head>
 <body class="bg-white-600 font-sans ">
-    <header class="bg-gray-100  p-6 flex items-center justify-between shadow-lg">
-        <img src="Asset\logo adel 1.png" class="w-32 h-auto rounded-md " /> 
-        <div class="flex gap-4 font-bold">
-            <a href="index.html">Home</a>
-            <a href="Maps.html">Lokasi</a>
-            <a href="Layanan.html">Layanan</a>
-            <a href="Galeri.html">Galeri</a>
-            <button onclick="WA()" class="border border-blue-400 bg-gradient-to-r from-blue-500 via-purple-400 to-blue-500 font-bold rounded-full px-4" type="submit">Hubungi kami</button>
+   <header class="bg-gray-100 p-4 md:p-6 flex flex-wrap items-center justify-between shadow-lg">
+        <img src="Asset/logo adel 1.png" class="w-24 md:w-32 h-auto rounded-md mb-2 md:mb-0"/>
+        <div class="flex flex-wrap gap-2 md:gap-4 font-bold">
+            <a href="index.html" class="text-sm md:text-base">Home</a>
+            <a href="Maps.html" class="text-sm md:text-base">Lokasi</a>
+            <a href="Layanan.html" class="text-sm md:text-base">Layanan</a>
+            <a href="Galeri.html" class="text-sm md:text-base">Galeri</a>
+            <button onclick="WA()" class="text-sm md:text-base border border-blue-400 bg-gradient-to-r from-blue-500 via-purple-400 to-blue-500 font-bold rounded-full px-3 md:px-4 py-1">
+                Hubungi kami
+            </button>
         </div>
     </header>
     <div class="text-center pt-4 pb-8">
@@ -37,7 +39,7 @@
     <main class="overflow-hidden relative w-full">
         <section id="carousel" class="flex transition-transform duration-500 ease-in-out">
         <div class="P-10 min-w-full">
-            <section class="flex justify-center gap-16 mt-4">
+            <section class=" flex-wrap flex justify-center gap-16 mt-4">
                 <img src="Asset\contoh_gambar.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
                 onclick="openModal('Asset/contoh_gambar.jpg', 'Gambar ini menunjukkan proses perakitan dan perbaikan sistem kendali mobil remote control (RC) yang dilengkapi dengan modul Arduino. Tim teknisi sedang menguji koneksi komponen seperti motor driver, baterai, dan rangkaian kontrol untuk memastikan kendaraan berfungsi dengan optimal. Proyek ini menggambarkan keahlian kami dalam menangani perangkat berbasis mikrokontroler, termasuk troubleshooting dan kalibrasi untuk hobi atau riset teknologi')"/>
                 <img src="Asset/batterai.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
@@ -52,7 +54,7 @@
                     <img src="Asset/ICON NEXT.svg" class="w-8 h-8 mr-8"/>
                 </button>
             </div>
-            <section class="flex justify-center gap-16 mt-10 mb-12">
+            <section class="flex-wrap flex justify-center gap-16 mt-10 mb-12">
                 <img src="Asset/kipas2.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
                 onclick="openModal('Asset/kipas2.jpg', 'Gambar ini menunjukkan teknisi kami yang sedang memperbaiki motor dinamo pada kipas berdiri. Perawatan dilakukan pada bagian stator dan rotor, termasuk penggantian bearing yang aus serta pembersihan kumparan dari debu atau karat. Upaya ini bertujuan memperpanjang usia pakai kipas dan memulihkan kekuatan putaran baling-baling.')"/>
                 <img src="Asset/kuning.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
@@ -64,7 +66,7 @@
             </section>
         </div>
         <div class="P-10 min-w-full">
-            <section class="flex justify-center gap-16 mt-6 ">
+            <section class="flex-wrap flex justify-center gap-16 mt-6 ">
                  <img src="Asset\contoh_gambar.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
                 onclick="openModal('Asset/contoh_gambar.jpg', 'Gambar ini menunjukkan proses perakitan dan perbaikan sistem kendali mobil remote control (RC) yang dilengkapi dengan modul Arduino. Tim teknisi sedang menguji koneksi komponen seperti motor driver, baterai, dan rangkaian kontrol untuk memastikan kendaraan berfungsi dengan optimal. Proyek ini menggambarkan keahlian kami dalam menangani perangkat berbasis mikrokontroler, termasuk troubleshooting dan kalibrasi untuk hobi atau riset teknologi')"/>
                 <img src="Asset/batterai.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
@@ -91,7 +93,7 @@
                 
             </Section>
             
-            <section class="flex justify-center gap-16 mt-10 mb-4">
+            <section class="flex-wrap flex justify-center gap-16 mt-10 mb-4">
                  <img src="Asset/kipas2.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
                 onclick="openModal('Asset/kipas2.jpg', 'Gambar ini menunjukkan teknisi kami yang sedang memperbaiki motor dinamo pada kipas berdiri. Perawatan dilakukan pada bagian stator dan rotor, termasuk penggantian bearing yang aus serta pembersihan kumparan dari debu atau karat. Upaya ini bertujuan memperpanjang usia pakai kipas dan memulihkan kekuatan putaran baling-baling.')"/>
                 <img src="Asset/kuning.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
@@ -103,7 +105,7 @@
             </section>
         </div>
         <div class="P-10 min-w-full">
-            <section class="flex justify-center gap-16 mt-6  ">
+            <section class="flex-wrap flex justify-center gap-16 mt-6  ">
                 <img src="Asset\contoh_gambar.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
                 onclick="openModal('Asset/contoh_gambar.jpg', 'Gambar ini menunjukkan proses perakitan dan perbaikan sistem kendali mobil remote control (RC) yang dilengkapi dengan modul Arduino. Tim teknisi sedang menguji koneksi komponen seperti motor driver, baterai, dan rangkaian kontrol untuk memastikan kendaraan berfungsi dengan optimal. Proyek ini menggambarkan keahlian kami dalam menangani perangkat berbasis mikrokontroler, termasuk troubleshooting dan kalibrasi untuk hobi atau riset teknologi')"/>
                 <img src="Asset/batterai.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
@@ -120,7 +122,7 @@
                     </button>
                 </div>
             </section>
-            <section class="flex justify-center gap-16 mt-10 mb-4">
+            <section class="flex-wrap flex justify-center gap-16 mt-10 mb-4">
                 <img src="Asset/kipas2.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
                 onclick="openModal('Asset/kipas2.jpg', 'Gambar ini menunjukkan teknisi kami yang sedang memperbaiki motor dinamo pada kipas berdiri. Perawatan dilakukan pada bagian stator dan rotor, termasuk penggantian bearing yang aus serta pembersihan kumparan dari debu atau karat. Upaya ini bertujuan memperpanjang usia pakai kipas dan memulihkan kekuatan putaran baling-baling.')"/>
                 <img src="Asset/kuning.jpg" class="rounded-2xl bg-blue-950 w-56 h-56 object-cover border border-blue-950 border-4"
@@ -147,19 +149,19 @@
 
 
     </main> 
-    <footer class="flex justify-between bg-[#010C38] p-10 text-white">
-        <div class="mt-20">
-            <p>kontak</p>
+    <footer class="flex flex-col md:flex-row justify-between bg-[#010C38] p-10 text-white space-y-6 md:space-y-0">
+        <div class="mt-0 md:mt-20 text-sm md:text-base">
+            <p class="font-semibold">Kontak</p>
             <p class="mb-4">Hubungi Kami Kapan Saja</p>
-            <p>Alamat : Daerah Istimewa Yogyakarta</p>
-            <p>Nomor telepon : 081395237757</p>
-            <p>Surel : tav.velektronika@gmail.com</p>
+            <p>Alamat: Daerah Istimewa Yogyakarta</p>
+            <p>Nomor telepon: 081395237757</p>
+            <p>Surel: tav.velektronika@gmail.com</p>
         </div>
-        <div class="flex items-center pt-20">
-            <img src="Asset\logo adel 1.png"/>
-            <P class="text-6xl mb-4">|</P>
-            <img src="Asset\Screenshot_2025-05-20_140818-removebg-preview 1.png"/>
-        </div>       
+        <div class="flex flex-col md:flex-row items-center md:pt-20">
+            <img src="Asset/logo adel 1.png" class="w-28 h-auto mb-2 md:mb-0"/>
+            <p class="text-4xl md:text-6xl mx-2">|</p>
+            <img src="Asset/Screenshot_2025-05-20_140818-removebg-preview 1.png" class="w-28 h-auto"/>
+        </div>
     </footer>  
     <script src="Script.js"></script>
 </body>

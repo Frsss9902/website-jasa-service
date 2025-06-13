@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalDesc = document.getElementById('modalDesc');
   const closeModalBtn = document.getElementById('closeModal');
 
-  // Fungsi global buka modal
+  // Fungsi buka modal
   window.openModal = function(imageSrc, description) {
     modalImage.src = imageSrc;
     modalDesc.innerText = description;

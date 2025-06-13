@@ -1,5 +1,5 @@
-let currentSlide = 0; // mulai dari slide pertama (index 0)
-const totalSlides = 3; // total slide (0, 1, 2)
+let currentSlide = 0;
+const totalSlides = 3;
 
 function nextSlide() {
   const carousel = document.getElementById("carousel");
